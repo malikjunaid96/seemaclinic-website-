@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Seema Qazi Clinic — MBBS, MSPH, RMP | Islamabad</title>
+<meta name="description" content="Dr. Seema Qazi Clinic, Multi Gardens B-17, Islamabad. Family medicine, women's health, child vaccinations & preventive care. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFF6EC;
+    --cream-2:#FFEEDB;
+    --paper:#FFFDF9;
+    --ink:#1B1330;
+    --ink-soft:#5B5170;
+    --teal:#0E5C56;
+    --teal-deep:#093F3B;
+    --teal-tint:#E3F1EE;
+    --coral:#FF6B4A;
+    --coral-deep:#E2502E;
+    --magenta:#E0218A;
+    --magenta-deep:#B5106B;
+    --gold:#FFB627;
+    --white:#ffffff;
+    --line:rgba(27,19,48,0.10);
+    --shadow-lg: 0 30px 60px -20px rgba(27,19,48,0.25);
+    --shadow-sm: 0 10px 25px -12px rgba(27,19,48,0.22);
+    --font-display:'Fraunces', serif;
+    --font-body:'Plus Jakarta Sans', sans-serif;
+    --font-mono:'Space Mono', monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;margin:0;padding:0;}
+  section{position:relative;}
+
+  .wrap{
+    width:min(1180px, 92%);
+    margin-inline:auto;
+  }
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    display:inline-flex;
+    align-items:center;
+    gap:0.5em;
+    color:var(--magenta-deep);
+    font-weight:700;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;height:2px;
+    background:var(--magenta);
+    display:inline-block;
+  }
+
+  h1,h2,h3{
+    font-family:var(--font-display);
+    margin:0;
+    line-height:1.05;
+    color:var(--ink);
+  }
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:100;
+    background:rgba(255,246,236,0.86);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    width:min(1180px, 92%);
+    margin-inline:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:1.15rem;
+    color:var(--teal-deep);
+  }
+  .brand-mark{
+    width:38px;height:38px;
+    border-radius:11px;
+    background:linear-gradient(135deg, var(--magenta), var(--coral));
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+    box-shadow:0 6px 16px -6px rgba(224,33,138,0.55);
+  }
+  .brand-mark svg{width:20px;height:20px;}
+  .brand small{
+    display:block;
+    font-family:var(--font-mono);
+    font-weight:400;
+    font-size:0.62rem;
+    letter-spacing:0.08em;
+    color:var(--ink-soft);
+    margin-top:1px;
+  }
+  .nav-links{
+    display:flex;
+    align-items:center;
+    gap:34px;
+  }
+  .nav-links a{
+    font-size:0.92rem;
+    font-weight:600;
+    color:var(--ink-soft);
+    position:relative;
+    padding:4px 0;
+    transition:color .25s ease;
+  }
+  .nav-links a:hover{color:var(--magenta-deep);}
+  .nav-links a::after{
+    content:"";
+    position:absolute;left:0;bottom:-2px;
+    width:0%;height:2px;
+    background:var(--magenta);
+    transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:0.92rem;
+    padding:13px 24px;
+    border-radius:100px;
+    cursor:pointer;
+    border:none;
+    white-space:nowrap;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+  .btn svg{width:18px;height:18px;flex-shrink:0;}
+  .btn-primary{
+    background:linear-gradient(135deg,#25D366,#1DA851);
+    color:#fff;
+    box-shadow:0 12px 28px -10px rgba(29,168,81,0.55);
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 32px -10px rgba(29,168,81,0.6);}
+  .btn-outline{
+    background:transparent;
+    border:1.5px solid var(--ink);
+    color:var(--ink);
+  }
+  .btn-outline:hover{background:var(--ink);color:var(--cream);transform:translateY(-3px);}
+  .btn-dark{
+    background:var(--teal-deep);
+    color:var(--cream);
+    box-shadow:0 12px 28px -10px rgba(9,63,59,0.5);
+  }
+  .btn-dark:hover{transform:translateY(-3px);background:var(--teal);}
+  .btn-sm{padding:10px 18px;font-size:0.84rem;}
+
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.25s;}
+
+  /* ---------- HEARTBEAT DIVIDER ---------- */
+  .pulse-line{
+    width:100%;
+    height:46px;
+    display:block;
+  }
+  .pulse-line path{
+    fill:none;
+    stroke:var(--magenta);
+    stroke-width:2.4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:1200;
+    stroke-dashoffset:1200;
+    animation:draw 5.5s ease-in-out infinite;
+  }
+  @keyframes draw{
+    0%{stroke-dashoffset:1200;}
+    45%{stroke-dashoffset:0;}
+    70%{stroke-dashoffset:0;opacity:1;}
+    85%{opacity:0;stroke-dashoffset:-1200;}
+    100%{opacity:0;stroke-dashoffset:-1200;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:168px 0 60px;
+    background:
+      radial-gradient(620px 420px at 88% 8%, rgba(255,182,39,0.30), transparent 60%),
+      radial-gradient(700px 500px at 10% 100%, rgba(224,33,138,0.12), transparent 65%),
+      var(--cream);
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:40px;
+    align-items:center;
+  }
+  .hero-copy h1{
+    font-size:clamp(2.5rem, 4.6vw, 4.1rem);
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:18px 0 22px;
+  }
+  .hero-copy h1 em{
+    font-style:italic;
+    font-weight:600;
+    background:linear-gradient(100deg, var(--magenta), var(--coral) 60%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero-copy p{
+    font-size:1.08rem;
+    line-height:1.65;
+    color:var(--ink-soft);
+    max-width:480px;
+    margin-bottom:34px;
+  }
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:34px;}
+  .hero-meta{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    padding-top:26px;
+    border-top:1px solid var(--line);
+  }
+  .hero-meta div b{
+    display:block;
+    font-family:var(--font-display);
+    font-size:1.5rem;
+    color:var(--teal-deep);
+  }
+  .hero-meta div span{
+    font-family:var(--font-mono);
+    font-size:0.7rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  /* ---- 3D hero visual ---- */
+  .hero-visual{
+    position:relative;
+    height:480px;
+    perspective:1400px;
+  }
+  .hero-3d{
+    position:absolute;
+    inset:0;
+    transform-style:preserve-3d;
+    transform:rotateX(8deg) rotateY(-14deg);
+    transition:transform .15s ease-out;
+    animation:floatGroup 8s ease-in-out infinite;
+  }
+  @keyframes floatGroup{
+    0%,100%{translate:0 0;}
+    50%{translate:0 -14px;}
+  }
+  .ring{
+    position:absolute;
+    border-radius:50%;
+    border:2px dashed rgba(14,92,86,0.25);
+  }
+  .ring.r1{width:360px;height:360px;top:50%;left:50%;margin:-180px 0 0 -180px;animation:spin 30s linear infinite;}
+  .ring.r2{width:270px;height:270px;top:50%;left:50%;margin:-135px 0 0 -135px;border-color:rgba(224,33,138,0.25);animation:spin 22s linear infinite reverse;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .capsule{
+    position:absolute;
+    border-radius:999px;
+    box-shadow:var(--shadow-lg);
+  }
+  .capsule::after{
+    content:"";
+    position:absolute;inset:0;
+    border-radius:inherit;
+    background:linear-gradient(120deg, rgba(255,255,255,0.55), transparent 45%);
+  }
+  .c1{
+    width:190px;height:78px;
+    top:18%;left:8%;
+    background:linear-gradient(135deg, var(--magenta), var(--coral));
+    transform:translateZ(70px) rotate(-18deg);
+    animation:bob1 6s ease-in-out infinite;
+  }
+  .c2{
+    width:150px;height:62px;
+    bottom:16%;left:2%;
+    background:linear-gradient(135deg, var(--gold), var(--coral));
+    transform:translateZ(40px) rotate(22deg);
+    animation:bob2 7s ease-in-out infinite;
+  }
+  .c3{
+    width:120px;height:50px;
+    top:8%;right:6%;
+    background:linear-gradient(135deg, var(--teal), #16847B);
+    transform:translateZ(100px) rotate(-30deg);
+    animation:bob3 5.5s ease-in-out infinite;
+  }
+  @keyframes bob1{0%,100%{transform:translateZ(70px) rotate(-18deg) translateY(0);}50%{transform:translateZ(70px) rotate(-18deg) translateY(-18px);}}
+  @keyframes bob2{0%,100%{transform:translateZ(40px) rotate(22deg) translateY(0);}50%{transform:translateZ(40px) rotate(22deg) translateY(14px);}}
+  @keyframes bob3{0%,100%{transform:translateZ(100px) rotate(-30deg) translateY(0);}50%{transform:translateZ(100px) rotate(-30deg) translateY(-10px);}}
+
+  .badge-card{
+    position:absolute;
+    bottom:8%;
+    right:4%;
+    width:230px;
+    background:var(--paper);
+    border-radius:20px;
+    padding:18px 20px;
+    box-shadow:var(--shadow-lg);
+    transform:translateZ(130px) rotate(4deg);
+    animation:bob3 6.5s ease-in-out infinite;
+  }
+  .badge-card .dot{
+    width:10px;height:10px;border-radius:50%;
+    background:#25D366;
+    display:inline-block;
+    margin-right:8px;
+    box-shadow:0 0 0 4px rgba(37,211,102,0.25);
+  }
+  .badge-card p{margin:0;font-size:0.82rem;color:var(--ink-soft);font-weight:600;}
+  .badge-card strong{display:block;font-family:var(--font-display);font-size:1.05rem;margin-top:4px;}
+
+  .core-orb{
+    position:absolute;
+    top:50%;left:50%;
+    width:150px;height:150px;
+    margin:-75px 0 0 -75px;
+    border-radius:50%;
+    background:radial-gradient(circle at 32% 28%, #fff, var(--teal-tint) 38%, var(--teal) 100%);
+    transform:translateZ(20px);
+    box-shadow:0 20px 50px -10px rgba(14,92,86,0.45), inset 0 0 0 6px rgba(255,255,255,0.5);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .core-orb svg{width:58px;height:58px;color:var(--teal-deep);}
+
+  /* ---------- TICKER ---------- */
+  .ticker-wrap{
+    background:var(--ink);
+    overflow:hidden;
+    padding:16px 0;
+    border-top:1px solid rgba(255,255,255,0.08);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .ticker{
+    display:flex;
+    width:max-content;
+    animation:scroll 26s linear infinite;
+  }
+  .ticker span{
+    font-family:var(--font-mono);
+    font-size:0.85rem;
+    letter-spacing:0.05em;
+    color:var(--cream);
+    padding:0 26px;
+    white-space:nowrap;
+    display:flex;align-items:center;gap:10px;
+  }
+  .ticker span::before{content:"✦";color:var(--gold);}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ---------- SECTION HEADERS ---------- */
+  .sec-head{
+    max-width:620px;
+    margin-bottom:54px;
+  }
+  .sec-head h2{
+    font-size:clamp(1.9rem, 3.2vw, 2.6rem);
+    font-weight:600;
+    margin-top:14px;
+  }
+  .sec-head p{
+    color:var(--ink-soft);
+    font-size:1.02rem;
+    margin-top:14px;
+    line-height:1.6;
+  }
+  .center{margin-inline:auto;text-align:center;}
+
+  /* ---------- ABOUT ---------- */
+  .about{padding:110px 0;}
+  .about-grid{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:60px;
+    align-items:center;
+  }
+  .doctor-card{
+    position:relative;
+    background:linear-gradient(160deg, var(--teal-deep), var(--teal));
+    border-radius:28px;
+    padding:46px 34px;
+    color:var(--cream);
+    box-shadow:var(--shadow-lg);
+  }
+  .doctor-avatar{
+    width:104px;height:104px;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--gold), var(--coral));
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-display);
+    font-size:2.1rem;
+    font-weight:600;
+    color:var(--ink);
+    margin-bottom:22px;
+    box-shadow:0 14px 30px -10px rgba(0,0,0,0.35);
+  }
+  .doctor-card h3{
+    font-size:1.6rem;
+    color:#fff;
+    font-weight:600;
+  }
+  .doctor-card .role{
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    color:var(--gold);
+    margin:8px 0 22px;
+    display:block;
+  }
+  .cred-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .cred-pill{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    letter-spacing:0.05em;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.18);
+    padding:7px 13px;
+    border-radius:100px;
+  }
+  .about-copy p{
+    color:var(--ink-soft);
+    font-size:1.04rem;
+    line-height:1.75;
+    margin-bottom:20px;
+  }
+  .cred-defs{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:32px;
+  }
+  .cred-def{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:20px 18px;
+  }
+  .cred-def b{
+    font-family:var(--font-display);
+    font-size:1.2rem;
+    color:var(--magenta-deep);
+    display:block;
+    margin-bottom:6px;
+  }
+  .cred-def span{font-size:0.85rem;color:var(--ink-soft);line-height:1.5;}
+
+  /* ---------- SERVICES ---------- */
+  .services{padding:90px 0 110px;background:var(--cream-2);}
+  .svc-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  .svc-card{
+    --tx:0deg;--ty:0deg;
+    background:var(--paper);
+    border-radius:22px;
+    padding:32px 28px;
+    border:1px solid var(--line);
+    transform:perspective(800px) rotateX(var(--tx)) rotateY(var(--ty));
+    transition:transform .12s ease, box-shadow .3s ease;
+    box-shadow:var(--shadow-sm);
+    cursor:default;
+  }
+  .svc-card:hover{box-shadow:var(--shadow-lg);}
+  .svc-icon{
+    width:54px;height:54px;
+    border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:22px;
+  }
+  .svc-icon svg{width:26px;height:26px;color:#fff;}
+  .svc-card h3{
+    font-size:1.18rem;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .svc-card p{
+    font-size:0.92rem;
+    color:var(--ink-soft);
+    line-height:1.6;
+    margin:0;
+  }
+  .i-magenta{background:linear-gradient(135deg,var(--magenta),var(--magenta-deep));}
+  .i-coral{background:linear-gradient(135deg,var(--coral),var(--coral-deep));}
+  .i-teal{background:linear-gradient(135deg,var(--teal),var(--teal-deep));}
+  .i-gold{background:linear-gradient(135deg,var(--gold),var(--coral));}
+
+  /* ---------- WHY ---------- */
+  .why{padding:110px 0;}
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+  }
+  .why-card{
+    border-radius:22px;
+    padding:30px 24px;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    min-height:200px;
+    display:flex;flex-direction:column;justify-content:space-between;
+  }
+  .why-card .num{
+    font-family:var(--font-mono);
+    font-size:0.75rem;
+    opacity:0.75;
+  }
+  .why-card h3{
+    font-size:1.3rem;
+    color:#fff;
+    font-weight:600;
+    line-height:1.25;
+  }
+  .why-card:nth-child(1){background:linear-gradient(155deg,var(--magenta),var(--magenta-deep));}
+  .why-card:nth-child(2){background:linear-gradient(155deg,var(--coral),var(--coral-deep));}
+  .why-card:nth-child(3){background:linear-gradient(155deg,var(--teal),var(--teal-deep));}
+  .why-card:nth-child(4){background:linear-gradient(155deg,#3A2E55,#1B1330);}
+
+  /* ---------- LOCATION ---------- */
+  .location{padding:90px 0 110px;background:var(--cream-2);}
+  .loc-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:stretch;
+  }
+  .map-frame{
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow-lg);
+    border:6px solid var(--paper);
+    min-height:420px;
+  }
+  .map-frame iframe{width:100%;height:100%;min-height:420px;border:0;display:block;}
+  .loc-card{
+    background:var(--paper);
+    border-radius:24px;
+    padding:40px 36px;
+    border:1px solid var(--line);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .loc-row{
+    display:flex;
+    gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .loc-row:last-of-type{border-bottom:none;}
+  .loc-row .ic{
+    width:42px;height:42px;border-radius:12px;
+    background:var(--teal-tint);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .loc-row .ic svg{width:20px;height:20px;color:var(--teal-deep);}
+  .loc-row h4{margin:0 0 4px;font-size:0.95rem;font-weight:700;}
+  .loc-row p{margin:0;font-size:0.9rem;color:var(--ink-soft);line-height:1.55;}
+  .loc-actions{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}
+
+  /* ---------- CTA ---------- */
+  .cta-band{
+    padding:90px 0;
+    background:linear-gradient(120deg, var(--teal-deep), var(--teal) 60%, #16847B);
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .cta-band::before{
+    content:"";
+    position:absolute;
+    width:600px;height:600px;
+    background:radial-gradient(circle, rgba(255,182,39,0.25), transparent 65%);
+    top:-260px;right:-180px;
+  }
+  .cta-band h2{
+    color:#fff;
+    font-size:clamp(1.9rem,3.6vw,2.7rem);
+    font-weight:600;
+    margin-bottom:18px;
+  }
+  .cta-band p{
+    color:rgba(255,246,236,0.82);
+    font-size:1.05rem;
+    margin-bottom:34px;
+  }
+  .cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--ink);
+    color:rgba(255,246,236,0.7);
+    padding:64px 0 28px;
+  }
+  .foot-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .foot-brand .brand{color:#fff;}
+  .foot-brand p{font-size:0.9rem;line-height:1.6;margin-top:14px;max-width:300px;color:rgba(255,246,236,0.6);}
+  footer h5{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:18px;
+  }
+  footer ul li{margin-bottom:11px;font-size:0.9rem;}
+  footer ul li a:hover{color:#fff;}
+  .foot-bottom{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-top:24px;font-size:0.8rem;flex-wrap:wrap;gap:10px;
+    color:rgba(255,246,236,0.45);
+  }
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .float-wa{
+    position:fixed;
+    bottom:26px;right:26px;
+    z-index:200;
+    width:64px;height:64px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#25D366,#1DA851);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 16px 34px -10px rgba(29,168,81,0.6);
+    animation:pulseGlow 2.4s ease-in-out infinite;
+  }
+  .float-wa svg{width:30px;height:30px;color:#fff;}
+  @keyframes pulseGlow{
+    0%,100%{box-shadow:0 16px 34px -10px rgba(29,168,81,0.6);}
+    50%{box-shadow:0 16px 34px -10px rgba(29,168,81,0.95), 0 0 0 12px rgba(37,211,102,0.12);}
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .hero-grid, .about-grid, .loc-grid{grid-template-columns:1fr;}
+    .hero-visual{height:360px;margin-top:30px;order:-1;}
+    .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .why-grid{grid-template-columns:repeat(2,1fr);}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .cred-defs{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+    .burger{display:block;}
+  }
+  @media (max-width:600px){
+    .svc-grid, .why-grid, .foot-grid{grid-template-columns:1fr;}
+    .hero{padding-top:140px;}
+    .hero-meta{gap:20px;}
+    .doctor-card{padding:34px 24px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </span>
+      <span>Dr. Seema Qazi Clinic<small>MBBS · MSPH · RMP</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" target="_blank" rel="noopener" href="https://wa.me/923318504966?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dr.%20Seema%20Qazi%20Clinic.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.44 5.06L2 22l5.2-1.5a9.9 9.9 0 0 0 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.78 14.06c-.25.7-1.27 1.27-1.97 1.4-.5.1-1.15.18-3.35-.72-2.8-1.16-4.6-3.99-4.74-4.18-.14-.19-1.14-1.51-1.14-2.88s.72-2.04.97-2.32c.25-.28.55-.35.74-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.07.91 2.22.07.15.12.32.02.5-.1.19-.15.31-.3.48-.15.17-.31.38-.45.51-.15.14-.3.3-.13.59.18.3.78 1.29 1.68 2.09 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.13.65-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.74-.18 1.44z"/></svg>
+        Book on WhatsApp
+      </a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <svg class="pulse-line" viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <path d="M0,23 L300,23 L330,6 L355,40 L380,23 L420,23 L445,12 L470,30 L495,23 L1200,23"/>
+  </svg>
+</nav>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Family &amp; Women's Health · Multi Gardens B-17, Islamabad</span>
+      <h1>Care that listens, <em>treats,</em> and follows up.</h1>
+      <p>Dr. Seema Qazi (MBBS, MSPH, RMP) runs a community-focused clinic for everyday illness, women's health, child vaccinations and preventive checkups — right here in B-17.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/923318504966?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dr.%20Seema%20Qazi%20Clinic.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.44 5.06L2 22l5.2-1.5a9.9 9.9 0 0 0 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.78 14.06c-.25.7-1.27 1.27-1.97 1.4-.5.1-1.15.18-3.35-.72-2.8-1.16-4.6-3.99-4.74-4.18-.14-.19-1.14-1.51-1.14-2.88s.72-2.04.97-2.32c.25-.28.55-.35.74-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.07.91 2.22.07.15.12.32.02.5-.1.19-.15.31-.3.48-.15.17-.31.38-.45.51-.15.14-.3.3-.13.59.18.3.78 1.29 1.68 2.09 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.13.65-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.74-.18 1.44z"/></svg>
+          Book Appointment
+        </a>
+        <a class="btn btn-outline" href="tel:+923318504966">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Clinic
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div><b>24 Hrs</b><span>Open Daily</span></div>
+        <div><b>MBBS</b><span>+ MSPH · RMP</span></div>
+        <div><b>B-17</b><span>Islamabad</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+      <div class="hero-3d" id="hero3d">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="core-orb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+        </div>
+        <div class="capsule c1"></div>
+        <div class="capsule c2"></div>
+        <div class="capsule c3"></div>
+        <div class="badge-card">
+          <p><span class="dot"></span>Now accepting patients</p>
+          <strong>Same-day booking via WhatsApp</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker">
+    <span>MBBS · Bachelor of Medicine &amp; Surgery</span>
+    <span>MSPH · Public Health Trained</span>
+    <span>RMP · Registered Medical Practitioner</span>
+    <span>Open 24 Hours</span>
+    <span>Multi Gardens B-17, Islamabad</span>
+    <span>Walk-ins &amp; WhatsApp Appointments</span>
+    <span>MBBS · Bachelor of Medicine &amp; Surgery</span>
+    <span>MSPH · Public Health Trained</span>
+    <span>RMP · Registered Medical Practitioner</span>
+    <span>Open 24 Hours</span>
+    <span>Multi Gardens B-17, Islamabad</span>
+    <span>Walk-ins &amp; WhatsApp Appointments</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="doctor-card reveal">
+      <div class="doctor-avatar">SQ</div>
+      <h3>Dr. Seema Qazi</h3>
+      <span class="role">MBBS · MSPH · RMP</span>
+      <div class="cred-row">
+        <span class="cred-pill">General Medicine</span>
+        <span class="cred-pill">Women's Health</span>
+        <span class="cred-pill">Public Health</span>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">About the clinic</span>
+      <h2 style="margin-top:14px;">A neighbourhood clinic built on a public-health approach to care.</h2>
+      <p>Dr. Seema Qazi combines a clinical medical degree (MBBS) with a Master's in Public Health (MSPH), bringing a preventive, whole-community lens to everyday consultations — not just treating symptoms, but understanding the bigger picture of a patient's health.</p>
+      <p>As a Registered Medical Practitioner (RMP) based in Multi Gardens B-17, the clinic serves families across the sector with general consultations, women's health, child immunisations and ongoing management of chronic conditions.</p>
+      <div class="cred-defs">
+        <div class="cred-def"><b>MBBS</b><span>Bachelor of Medicine, Bachelor of Surgery — the core medical degree.</span></div>
+        <div class="cred-def"><b>MSPH</b><span>Master of Science in Public Health — preventive &amp; community health expertise.</span></div>
+        <div class="cred-def"><b>RMP</b><span>Registered Medical Practitioner — licensed to practise medicine.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we treat</span>
+      <h2>Services at the clinic</h2>
+      <p>Hover a card — it tilts. Just like a good consultation, this clinic pays attention to the details.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card tilt reveal">
+        <div class="svc-icon i-magenta"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>General Consultation</h3>
+        <p>Everyday illness, fevers, infections and family medicine for all ages, with careful follow-up.</p>
+      </div>
+
+      <div class="svc-card tilt reveal">
+        <div class="svc-icon i-coral"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></div>
+        <h3>Women's Health &amp; Antenatal Care</h3>
+        <p>Routine gynaecological checkups, antenatal visits and guidance through every stage of pregnancy.</p>
+      </div>
+
+      <div class="svc-card tilt reveal">
+        <div class="svc-icon i-teal"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Child Health &amp; Vaccinations</h3>
+        <p>Growth monitoring and on-schedule immunisations to keep your child protected and healthy.</p>
+      </div>
+
+      <div class="svc-card tilt reveal">
+        <div class="svc-icon i-gold"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/><circle cx="18" cy="6" r="3"/></svg></div>
+        <h3>Chronic Disease Management</h3>
+        <p>Ongoing care and monitoring for diabetes, hypertension and other long-term conditions.</p>
+      </div>
+
+      <div class="svc-card tilt reveal">
+        <div class="svc-icon i-magenta"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h13Z"/><path d="M19 14h2.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H19"/><path d="M9 4v10"/></svg></div>
+        <h3>Minor Procedures &amp; Wound Care</h3>
+        <p>Dressing changes, suturing, injections and other minor procedures handled on-site.</p>
+      </div>
+
+      <div class="svc-card tilt reveal">
+        <div class="svc-icon i-teal"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+        <h3>Preventive Health Screening</h3>
+        <p>General checkups and risk screening, informed by a public-health approach to early detection.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why patients choose us</span>
+      <h2>Built for the neighbourhood it serves</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="num">01</span>
+        <h3>Open 24 Hours, every day of the week</h3>
+      </div>
+      <div class="why-card reveal">
+        <span class="num">02</span>
+        <h3>Experienced female physician for women &amp; families</h3>
+      </div>
+      <div class="why-card reveal">
+        <span class="num">03</span>
+        <h3>Public health trained — care that looks beyond the symptom</h3>
+      </div>
+      <div class="why-card reveal">
+        <span class="num">04</span>
+        <h3>Conveniently located inside Multi Gardens B-17</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Visit the clinic</span>
+      <h2>Find us in Multi Gardens B-17</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="map-frame reveal">
+        <iframe src="https://www.google.com/maps?q=33.6894144,72.8340471&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Clinic location map"></iframe>
+      </div>
+      <div class="loc-card reveal">
+        <div>
+          <div class="loc-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4>Address</h4><p>MR 2 &amp; MR 6, Block B, Multi Gardens B-17, Islamabad, Pakistan</p></div>
+          </div>
+          <div class="loc-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div><h4>Hours</h4><p>Open 24 hours, 7 days a week</p></div>
+          </div>
+          <div class="loc-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><h4>Phone &amp; WhatsApp</h4><p>+92 331 8504966</p></div>
+          </div>
+        </div>
+        <div class="loc-actions">
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/923318504966?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dr.%20Seema%20Qazi%20Clinic.">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.44 5.06L2 22l5.2-1.5a9.9 9.9 0 0 0 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.78 14.06c-.25.7-1.27 1.27-1.97 1.4-.5.1-1.15.18-3.35-.72-2.8-1.16-4.6-3.99-4.74-4.18-.14-.19-1.14-1.51-1.14-2.88s.72-2.04.97-2.32c.25-.28.55-.35.74-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.07.91 2.22.07.15.12.32.02.5-.1.19-.15.31-.3.48-.15.17-.31.38-.45.51-.15.14-.3.3-.13.59.18.3.78 1.29 1.68 2.09 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.13.65-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.74-.18 1.44z"/></svg>
+            Book Appointment
+          </a>
+          <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/place/?q=place_id:ChIJOY6rcRij3zgRSts1khX9yKQ">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold);">Ready when you are</span>
+    <h2 style="margin-top:14px;">Appointments are just a message away.</h2>
+    <p>Send your name and preferred time on WhatsApp — the clinic will confirm your slot directly.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/923318504966?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dr.%20Seema%20Qazi%20Clinic.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.44 5.06L2 22l5.2-1.5a9.9 9.9 0 0 0 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.78 14.06c-.25.7-1.27 1.27-1.97 1.4-.5.1-1.15.18-3.35-.72-2.8-1.16-4.6-3.99-4.74-4.18-.14-.19-1.14-1.51-1.14-2.88s.72-2.04.97-2.32c.25-.28.55-.35.74-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.07.91 2.22.07.15.12.32.02.5-.1.19-.15.31-.3.48-.15.17-.31.38-.45.51-.15.14-.3.3-.13.59.18.3.78 1.29 1.68 2.09 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.13.65-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.74-.18 1.44z"/></svg>
+        Book on WhatsApp
+      </a>
+      <a class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;" href="tel:+923318504966">Call +92 331 8504966</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          <span>Dr. Seema Qazi Clinic<small style="color:rgba(255,246,236,0.5);">MBBS · MSPH · RMP</small></span>
+        </a>
+        <p>A community-focused family &amp; women's health clinic in Multi Gardens B-17, Islamabad — open 24 hours.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About the Clinic</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#location">Location &amp; Hours</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>MR 2 &amp; MR 6, Block B, Multi Gardens B-17, Islamabad</li>
+          <li><a href="tel:+923318504966">+92 331 8504966</a></li>
+          <li><a target="_blank" rel="noopener" href="https://wa.me/923318504966">WhatsApp Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Dr. Seema Qazi Clinic. All rights reserved.</span>
+      <span>Islamabad, Pakistan</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="float-wa" target="_blank" rel="noopener" aria-label="Book on WhatsApp" href="https://wa.me/923318504966?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dr.%20Seema%20Qazi%20Clinic.">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.44 5.06L2 22l5.2-1.5a9.9 9.9 0 0 0 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.78 14.06c-.25.7-1.27 1.27-1.97 1.4-.5.1-1.15.18-3.35-.72-2.8-1.16-4.6-3.99-4.74-4.18-.14-.19-1.14-1.51-1.14-2.88s.72-2.04.97-2.32c.25-.28.55-.35.74-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.07.91 2.22.07.15.12.32.02.5-.1.19-.15.31-.3.48-.15.17-.31.38-.45.51-.15.14-.3.3-.13.59.18.3.78 1.29 1.68 2.09 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.13.65-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.74-.18 1.44z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+  burger.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    navLinks.style.display = open ? 'none' : 'flex';
+    navLinks.style.cssText += open ? '' : 'position:fixed;top:78px;left:0;right:0;background:var(--cream);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px -10px rgba(0,0,0,0.12);';
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (window.innerWidth <= 980) navLinks.style.display = 'none';
+  }));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Mouse-parallax tilt on hero 3D group
+  const heroVisual = document.getElementById('heroVisual');
+  const hero3d = document.getElementById('hero3d');
+  if (window.matchMedia('(pointer:fine)').matches) {
+    heroVisual.addEventListener('mousemove', (e) => {
+      const r = heroVisual.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      hero3d.style.transform = `rotateX(${8 - py * 16}deg) rotateY(${-14 + px * 22}deg)`;
+    });
+    heroVisual.addEventListener('mouseleave', () => {
+      hero3d.style.transform = 'rotateX(8deg) rotateY(-14deg)';
+    });
+
+    // Tilt on service cards
+    document.querySelectorAll('.svc-card.tilt').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty('--tx', (-py * 10) + 'deg');
+        card.style.setProperty('--ty', (px * 10) + 'deg');
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.setProperty('--tx', '0deg');
+        card.style.setProperty('--ty', '0deg');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
